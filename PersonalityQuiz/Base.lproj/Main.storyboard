@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Introduction View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IntroductionViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,7 +31,7 @@
                                         <rect key="frame" x="0.0" y="166.5" width="318.5" height="30"/>
                                         <state key="normal" title="Begin Personality Quiz"/>
                                         <connections>
-                                            <segue destination="Ade-aC-wGh" kind="show" id="g23-RK-9Je"/>
+                                            <segue destination="brN-Jr-PqZ" kind="show" id="g23-RK-9Je"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -81,35 +81,86 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="yGl-BI-nMW">
             <objects>
-                <viewController id="Ade-aC-wGh" sceneMemberID="viewController">
+                <viewController id="Ade-aC-wGh" customClass="QuestionViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nPf-DI-w0p">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="of7-q0-zU3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="F7s-i6-9Xh"/>
+                    <connections>
+                        <segue destination="AD3-N3-TZK" kind="show" identifier="ResultsSegue" id="9fN-Gr-IPY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C1N-13-tve" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="882" y="133"/>
+            <point key="canvasLocation" x="1820" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Results-->
         <scene sceneID="gDJ-IU-deI">
             <objects>
-                <viewController id="AD3-N3-TZK" sceneMemberID="viewController">
+                <viewController id="AD3-N3-TZK" customClass="ResultsViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2ku-p5-3XC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="NF6-Yg-4TB">
+                                <rect key="frame" x="0.0" y="64" width="375" height="539"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woN-Tb-WeY">
+                                        <rect key="frame" x="129" y="0.0" width="117" height="539"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czb-Oq-G1e">
+                                <rect key="frame" x="166" y="378" width="42" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NF6-Yg-4TB" firstAttribute="top" secondItem="9rB-Kq-0v6" secondAttribute="top" id="0hC-ks-Cpy"/>
+                            <constraint firstItem="NF6-Yg-4TB" firstAttribute="centerY" secondItem="2ku-p5-3XC" secondAttribute="centerY" id="ELe-nA-SZO"/>
+                            <constraint firstItem="NF6-Yg-4TB" firstAttribute="centerX" secondItem="2ku-p5-3XC" secondAttribute="centerX" id="feX-A3-2eu"/>
+                            <constraint firstItem="NF6-Yg-4TB" firstAttribute="leading" secondItem="9rB-Kq-0v6" secondAttribute="leading" id="hDC-7s-qrb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9rB-Kq-0v6"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Results" id="beE-ap-MtQ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="1Sx-qM-TbX"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XDu-PP-8Kb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1624" y="132"/>
+            <point key="canvasLocation" x="2562.4000000000001" y="131.78410794602701"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hAE-Ld-Gvw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="brN-Jr-PqZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MBP-1Y-vBw">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ade-aC-wGh" kind="relationship" relationship="rootViewController" id="hqa-jh-EVs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bck-UM-RTx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="880.79999999999995" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>
