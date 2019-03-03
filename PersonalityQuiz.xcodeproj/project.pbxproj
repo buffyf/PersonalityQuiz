@@ -14,6 +14,7 @@
 		A45EED9B222C146E0000CF52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A45EED99222C146E0000CF52 /* LaunchScreen.storyboard */; };
 		A45EEDA3222C1C850000CF52 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45EEDA2222C1C850000CF52 /* QuestionViewController.swift */; };
 		A45EEDA5222C1CAA0000CF52 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45EEDA4222C1CAA0000CF52 /* ResultsViewController.swift */; };
+		A45EEDA7222C2F480000CF52 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45EEDA6222C2F480000CF52 /* QuestionData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A45EED9C222C146E0000CF52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A45EEDA2222C1C850000CF52 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		A45EEDA4222C1CAA0000CF52 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		A45EEDA6222C2F480000CF52 /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				A45EED90222C146D0000CF52 /* AppDelegate.swift */,
 				A45EED92222C146D0000CF52 /* IntroductionViewController.swift */,
 				A45EED94222C146D0000CF52 /* Main.storyboard */,
+				A45EEDA6222C2F480000CF52 /* QuestionData.swift */,
 				A45EEDA4222C1CAA0000CF52 /* ResultsViewController.swift */,
 				A45EEDA2222C1C850000CF52 /* QuestionViewController.swift */,
 				A45EED97222C146E0000CF52 /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			files = (
 				A45EED93222C146D0000CF52 /* IntroductionViewController.swift in Sources */,
 				A45EED91222C146D0000CF52 /* AppDelegate.swift in Sources */,
+				A45EEDA7222C2F480000CF52 /* QuestionData.swift in Sources */,
 				A45EEDA3222C1C850000CF52 /* QuestionViewController.swift in Sources */,
 				A45EEDA5222C1CAA0000CF52 /* ResultsViewController.swift in Sources */,
 			);
