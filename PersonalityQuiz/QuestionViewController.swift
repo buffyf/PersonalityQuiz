@@ -12,6 +12,7 @@ import UIKit
 
 class QuestionViewController: UIViewController {
     
+
   
     var questionIndex = 0
     var answersChose: [Answer] = []
@@ -163,6 +164,14 @@ class QuestionViewController: UIViewController {
             updateUI()
         } else {
             performSegue(withIdentifier: "ResultsSegue", sender: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "ResultsSegue" {
+            let resultsViewController = segue.destination as!
+            ResultsViewController
+            resultsViewController.responses = answersChose
         }
     }
     /*
