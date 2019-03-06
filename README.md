@@ -4,7 +4,7 @@
  ![myimage-alt-tag](https://github.com/buffyf/PersonalityQuiz/blob/master/Screen%20Shot%202019-03-05%20at%206.14.56%20PM.png)
 
 ### About: 
-##### A three-question, three page quiz utilizing optional data, navigation hierarchies, segues, modals, workflow with tabs and navigation stacks.
+##### A three-question, three page quiz utilizing switches, buttons, slider, progress bar, optional data, navigation hierarchies, segues, modals, workflow with tabs and navigation stacks.
 
 ### Description: 
 ##### Players are presented with a light-hearted topic, What animal are you?,  and answer questions that align them to a particular outcome.
