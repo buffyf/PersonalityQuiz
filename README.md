@@ -1,5 +1,7 @@
 # Personality Quiz
 
+ ![myimage-alt-tag](https://github.com/buffyf/PersonalityQuiz/blob/master/Screen%20Shot%202019-03-05%20at%206.15.14%20PM.png)
+ ![myimage-alt-tag](https://github.com/buffyf/PersonalityQuiz/blob/master/Screen%20Shot%202019-03-05%20at%206.14.56%20PM.png)
 
 ### About: 
 ##### A three-question, three page quiz utilizing optional data, navigation hierarchies, segues, modals, workflow with tabs and navigation stacks.
