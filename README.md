@@ -1,7 +1,6 @@
 # Personality Quiz
 
 
-
 ### About: 
 ##### A three-question, three page quiz utilizing optional data, navigation hierarchies, segues, modals, workflow with tabs and navigation stacks.
 
